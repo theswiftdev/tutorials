@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:Layers - Circle/Layers - Circle.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Layers - Gradient/Layers - Gradient.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:AutoLayout - Anchors/AutoLayout - Anchors.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:AutoLayout - VFL/AutoLayout - VFL.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:AutoLayout - Constraints/AutoLayout - Constraints.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:SpringsAndStruts/SpringsAndStruts.xcodeproj">
+   </FileRef>
+</Workspace>
