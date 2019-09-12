@@ -115,7 +115,6 @@ open class VideoView: UIView {
     
     private func teardown() {
         self.player?.pause()
-        self.player = nil
 
         self.player?.currentItem?.removeObserver(self, forKeyPath: "status")
         
@@ -128,9 +127,10 @@ open class VideoView: UIView {
         NotificationCenter.default.removeObserver(self,
                                                   name: .AVPlayerItemFailedToPlayToEndTime,
                                                   object: self.player?.currentItem)
+        
+        self.player = nil
     }
-
-   
+    
 
     @objc func itemDidPlayToEndTime(_ notification: NSNotification) {
         guard self.repeat == .loop else {
