@@ -1,0 +1,419 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		16328A68232B22AA00132658 /* TodoListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16328A67232B22AA00132658 /* TodoListItemView.swift */; };
+		16328A6B232B28B100132658 /* TodoEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16328A6A232B28B100132658 /* TodoEnvironment.swift */; };
+		164311E32330103C00943C91 /* Publisher+On.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164311E22330103C00943C91 /* Publisher+On.swift */; };
+		165537E9232D556B00CFEA85 /* HTTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165537E8232D556A00CFEA85 /* HTTP.swift */; };
+		16A8B6F3232AF3760090BBAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A8B6F2232AF3760090BBAA /* AppDelegate.swift */; };
+		16A8B6F5232AF3760090BBAA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A8B6F4232AF3760090BBAA /* SceneDelegate.swift */; };
+		16A8B6F7232AF3760090BBAA /* TodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A8B6F6232AF3760090BBAA /* TodoView.swift */; };
+		16A8B6F9232AF3780090BBAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16A8B6F8232AF3780090BBAA /* Assets.xcassets */; };
+		16A8B6FC232AF3780090BBAA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16A8B6FB232AF3780090BBAA /* Preview Assets.xcassets */; };
+		16A8B6FF232AF3780090BBAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16A8B6FD232AF3780090BBAA /* LaunchScreen.storyboard */; };
+		16F264DA232AF3E0008F4764 /* TodoInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F264D4232AF3E0008F4764 /* TodoInteractor.swift */; };
+		16F264DB232AF3E0008F4764 /* TodoEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F264D5232AF3E0008F4764 /* TodoEntity.swift */; };
+		16F264DC232AF3E0008F4764 /* TodoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F264D6232AF3E0008F4764 /* TodoViewModel.swift */; };
+		16F264DD232AF3E0008F4764 /* TodoRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F264D7232AF3E0008F4764 /* TodoRouter.swift */; };
+		16F264DE232AF3E0008F4764 /* TodoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F264D8232AF3E0008F4764 /* TodoPresenter.swift */; };
+		16F264DF232AF3E0008F4764 /* TodoModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F264D9232AF3E0008F4764 /* TodoModule.swift */; };
+		16F264E5232AF634008F4764 /* VIPER.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F264E4232AF634008F4764 /* VIPER.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		16328A67232B22AA00132658 /* TodoListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListItemView.swift; sourceTree = "<group>"; };
+		16328A6A232B28B100132658 /* TodoEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoEnvironment.swift; sourceTree = "<group>"; };
+		164311E22330103C00943C91 /* Publisher+On.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher+On.swift"; sourceTree = "<group>"; };
+		165537E8232D556A00CFEA85 /* HTTP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTP.swift; sourceTree = "<group>"; };
+		16A8B6EF232AF3760090BBAA /* VIPERAndSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VIPERAndSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		16A8B6F2232AF3760090BBAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		16A8B6F4232AF3760090BBAA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		16A8B6F6232AF3760090BBAA /* TodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoView.swift; sourceTree = "<group>"; };
+		16A8B6F8232AF3780090BBAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		16A8B6FB232AF3780090BBAA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		16A8B6FE232AF3780090BBAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		16A8B700232AF3780090BBAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16F264D4232AF3E0008F4764 /* TodoInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoInteractor.swift; sourceTree = "<group>"; };
+		16F264D5232AF3E0008F4764 /* TodoEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoEntity.swift; sourceTree = "<group>"; };
+		16F264D6232AF3E0008F4764 /* TodoViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoViewModel.swift; sourceTree = "<group>"; };
+		16F264D7232AF3E0008F4764 /* TodoRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoRouter.swift; sourceTree = "<group>"; };
+		16F264D8232AF3E0008F4764 /* TodoPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoPresenter.swift; sourceTree = "<group>"; };
+		16F264D9232AF3E0008F4764 /* TodoModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoModule.swift; sourceTree = "<group>"; };
+		16F264E4232AF634008F4764 /* VIPER.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VIPER.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		16A8B6EC232AF3760090BBAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		16A8B6E6232AF3760090BBAA = {
+			isa = PBXGroup;
+			children = (
+				16A8B6F1232AF3760090BBAA /* VIPERAndSwiftUI */,
+				16A8B6F0232AF3760090BBAA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		16A8B6F0232AF3760090BBAA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				16A8B6EF232AF3760090BBAA /* VIPERAndSwiftUI.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		16A8B6F1232AF3760090BBAA /* VIPERAndSwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				16F264E0232AF3F7008F4764 /* Assets */,
+				16F264D1232AF3E0008F4764 /* Sources */,
+			);
+			path = VIPERAndSwiftUI;
+			sourceTree = "<group>";
+		};
+		16F264D1232AF3E0008F4764 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				16A8B6F2232AF3760090BBAA /* AppDelegate.swift */,
+				16A8B6F4232AF3760090BBAA /* SceneDelegate.swift */,
+				164311E22330103C00943C91 /* Publisher+On.swift */,
+				16F264E4232AF634008F4764 /* VIPER.swift */,
+				165537E8232D556A00CFEA85 /* HTTP.swift */,
+				16F264D2232AF3E0008F4764 /* Modules */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		16F264D2232AF3E0008F4764 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				16F264D3232AF3E0008F4764 /* Todo */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		16F264D3232AF3E0008F4764 /* Todo */ = {
+			isa = PBXGroup;
+			children = (
+				16F264D9232AF3E0008F4764 /* TodoModule.swift */,
+				16F264D5232AF3E0008F4764 /* TodoEntity.swift */,
+				16F264D7232AF3E0008F4764 /* TodoRouter.swift */,
+				16F264D4232AF3E0008F4764 /* TodoInteractor.swift */,
+				16F264D8232AF3E0008F4764 /* TodoPresenter.swift */,
+				16F264D6232AF3E0008F4764 /* TodoViewModel.swift */,
+				16A8B6F6232AF3760090BBAA /* TodoView.swift */,
+				16328A67232B22AA00132658 /* TodoListItemView.swift */,
+				16328A6A232B28B100132658 /* TodoEnvironment.swift */,
+			);
+			path = Todo;
+			sourceTree = "<group>";
+		};
+		16F264E0232AF3F7008F4764 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				16A8B6F8232AF3780090BBAA /* Assets.xcassets */,
+				16A8B6FB232AF3780090BBAA /* Preview Assets.xcassets */,
+				16A8B6FD232AF3780090BBAA /* LaunchScreen.storyboard */,
+				16A8B700232AF3780090BBAA /* Info.plist */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		16A8B6EE232AF3760090BBAA /* VIPERAndSwiftUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16A8B703232AF3780090BBAA /* Build configuration list for PBXNativeTarget "VIPERAndSwiftUI" */;
+			buildPhases = (
+				16A8B6EB232AF3760090BBAA /* Sources */,
+				16A8B6EC232AF3760090BBAA /* Frameworks */,
+				16A8B6ED232AF3760090BBAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VIPERAndSwiftUI;
+			packageProductDependencies = (
+			);
+			productName = VIPERAndSwiftUI;
+			productReference = 16A8B6EF232AF3760090BBAA /* VIPERAndSwiftUI.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		16A8B6E7232AF3760090BBAA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "Tibor Bödecs";
+				TargetAttributes = {
+					16A8B6EE232AF3760090BBAA = {
+						CreatedOnToolsVersion = 11.0;
+					};
+				};
+			};
+			buildConfigurationList = 16A8B6EA232AF3760090BBAA /* Build configuration list for PBXProject "VIPERAndSwiftUI" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 16A8B6E6232AF3760090BBAA;
+			packageReferences = (
+			);
+			productRefGroup = 16A8B6F0232AF3760090BBAA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				16A8B6EE232AF3760090BBAA /* VIPERAndSwiftUI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		16A8B6ED232AF3760090BBAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16A8B6FF232AF3780090BBAA /* LaunchScreen.storyboard in Resources */,
+				16A8B6FC232AF3780090BBAA /* Preview Assets.xcassets in Resources */,
+				16A8B6F9232AF3780090BBAA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		16A8B6EB232AF3760090BBAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16328A68232B22AA00132658 /* TodoListItemView.swift in Sources */,
+				16F264DC232AF3E0008F4764 /* TodoViewModel.swift in Sources */,
+				16F264DD232AF3E0008F4764 /* TodoRouter.swift in Sources */,
+				16328A6B232B28B100132658 /* TodoEnvironment.swift in Sources */,
+				16F264DF232AF3E0008F4764 /* TodoModule.swift in Sources */,
+				16F264DB232AF3E0008F4764 /* TodoEntity.swift in Sources */,
+				16F264DA232AF3E0008F4764 /* TodoInteractor.swift in Sources */,
+				165537E9232D556B00CFEA85 /* HTTP.swift in Sources */,
+				16F264DE232AF3E0008F4764 /* TodoPresenter.swift in Sources */,
+				164311E32330103C00943C91 /* Publisher+On.swift in Sources */,
+				16A8B6F3232AF3760090BBAA /* AppDelegate.swift in Sources */,
+				16F264E5232AF634008F4764 /* VIPER.swift in Sources */,
+				16A8B6F5232AF3760090BBAA /* SceneDelegate.swift in Sources */,
+				16A8B6F7232AF3760090BBAA /* TodoView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		16A8B6FD232AF3780090BBAA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				16A8B6FE232AF3780090BBAA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		16A8B701232AF3780090BBAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		16A8B702232AF3780090BBAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		16A8B704232AF3780090BBAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "VIPERAndSwiftUI/Assets/Preview\\ Assets.xcassets";
+				DEVELOPMENT_TEAM = XL2GSHMUDQ;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = VIPERAndSwiftUI/Assets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tiborbodecs.VIPERAndSwiftUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		16A8B705232AF3780090BBAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "VIPERAndSwiftUI/Assets/Preview\\ Assets.xcassets";
+				DEVELOPMENT_TEAM = XL2GSHMUDQ;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = VIPERAndSwiftUI/Assets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tiborbodecs.VIPERAndSwiftUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		16A8B6EA232AF3760090BBAA /* Build configuration list for PBXProject "VIPERAndSwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16A8B701232AF3780090BBAA /* Debug */,
+				16A8B702232AF3780090BBAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16A8B703232AF3780090BBAA /* Build configuration list for PBXNativeTarget "VIPERAndSwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16A8B704232AF3780090BBAA /* Debug */,
+				16A8B705232AF3780090BBAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 16A8B6E7232AF3760090BBAA /* Project object */;
+}
