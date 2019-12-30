@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="iwj-95-4ZB" customClass="TextDetailCell" customModule="VIPER_best_practices" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="298" height="169"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="298" height="169"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VOx-y0-wp2">
+                        <rect key="frame" x="20" y="74.5" width="43.5" height="20.5"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VM2-L0-fPd">
+                        <rect key="frame" x="245" y="76.5" width="33" height="16"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="VM2-L0-fPd" firstAttribute="centerY" secondItem="iwj-95-4ZB" secondAttribute="centerY" id="1Lv-VK-wM5"/>
+                <constraint firstItem="VOx-y0-wp2" firstAttribute="leading" secondItem="iwj-95-4ZB" secondAttribute="leading" constant="20" id="7Nf-yP-LNS"/>
+                <constraint firstAttribute="trailing" secondItem="VM2-L0-fPd" secondAttribute="trailing" constant="20" id="Gjb-Rz-FaV"/>
+                <constraint firstItem="VM2-L0-fPd" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="VOx-y0-wp2" secondAttribute="trailing" constant="20" id="cW4-Jn-Mjs"/>
+                <constraint firstItem="VOx-y0-wp2" firstAttribute="centerY" secondItem="iwj-95-4ZB" secondAttribute="centerY" id="cht-EG-heF"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="jjK-lh-4U8"/>
+            <size key="customSize" width="298" height="169"/>
+            <connections>
+                <outlet property="detailTextLabel" destination="VM2-L0-fPd" id="3au-6e-IjA"/>
+                <outlet property="textLabel" destination="VOx-y0-wp2" id="pf8-Co-KZG"/>
+            </connections>
+            <point key="canvasLocation" x="336" y="207.34632683658174"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -1,0 +1,26 @@
+
+SUPPORTED_PLATFORMS = macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator
+
+TARGETED_DEVICE_FAMILY = 1,2,3,4
+
+LD_RUNPATH_SEARCH_PATHS = @executable_path/Frameworks @loader_path/Frameworks $(inherited)
+LD_RUNPATH_SEARCH_PATHS[sdk=macosx*] = @executable_path/../Frameworks @loader_path/../Frameworks $(inherited)
+SDKROOT = $(SDKROOT)
+LD_DYLIB_INSTALL_NAME = @rpath
+
+CODE_SIGN_STYLE = Manual
+DEVELOPMENT_TEAM =
+
+//:configuration = Debug
+CODE_SIGN_IDENTITY =
+CODE_SIGN_STYLE = Manual
+DEVELOPMENT_TEAM =
+PROVISIONING_PROFILE_SPECIFIER =
+
+
+//Carthage support
+//FRAMEWORK_SEARCH_PATHS[sdk=macosx*] = $(SRCROOT)/Carthage/Build/Mac/ $(inherited)
+//FRAMEWORK_SEARCH_PATHS[sdk=iphone*] = $(SRCROOT)/Carthage/Build/iOS/ $(inherited)
+//FRAMEWORK_SEARCH_PATHS[sdk=watch*] = $(SRCROOT)/Carthage/Build/watchOS/ $(inherited)
+//FRAMEWORK_SEARCH_PATHS[sdk=appletv*] = $(SRCROOT)/Carthage/Build/tvOS/ $(inherited)
+
