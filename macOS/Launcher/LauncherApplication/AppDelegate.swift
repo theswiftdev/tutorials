@@ -24,31 +24,31 @@ extension AppDelegate: NSApplicationDelegate {
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         
-        let mainAppIdentifier = "com.tiborbodecs.MainApplication"
+	let mainAppIdentifier = "com.tiborbodecs.MainApplication"
         let runningApps = NSWorkspace.shared.runningApplications
         let isRunning = !runningApps.filter { $0.bundleIdentifier == mainAppIdentifier }.isEmpty
         
         if !isRunning {
-            DistributedNotificationCenter.default().addObserver(self,
-                                                                selector: #selector(self.terminate),
-                                                                name: .killLauncher,
-                                                                object: mainAppIdentifier)
+            DistributedNotificationCenter.default().addObserver(self, 
+								selector: #selector(self.terminate), 
+								name: .killLauncher, 
+								object: mainAppIdentifier)
             
-            let path = Bundle.main.bundlePath as NSString
-            var components = path.pathComponents
-            components.removeLast()
-            components.removeLast()
-            components.removeLast()
-            components.append("MacOS")
-            components.append("MainApplication") //main app name
-            
-            let newPath = NSString.path(withComponents: components)
-            
-            NSWorkspace.shared.launchApplication(newPath)
+            let url = URL(fileURLWithPath: Bundle.main.bundlePath).deletingLastPathComponent().deletingLastPathComponent().deletingLastPathComponent().deletingLastPathComponent()
+            let path = url.appendingPathComponent("MacOS").appendingPathComponent("MainApplication").path
+
+            if #available(OSX 10.15, *) {
+                NSWorkspace.shared.openApplication(at: url, 
+						   configuration: NSWorkspace.OpenConfiguration(), 
+						   completionHandler: nil)
+            } else {
+                NSWorkspace.shared.launchApplication(path)
+            }
         }
         else {
             self.terminate()
         }
     }
+	
 }
 
