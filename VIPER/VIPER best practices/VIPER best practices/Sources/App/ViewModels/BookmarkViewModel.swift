@@ -6,17 +6,14 @@
 //  Copyright © 2019. Tibor Bödecs. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
-class BookmarkViewModel: CollectionViewViewModel<TextDetailCell, Bookmark> {
+class BookmarkViewModel: ViewModel<TextDetailCell, Bookmark> {
 
-    override func config(cell: TextDetailCell, data: Bookmark, indexPath: IndexPath, grid: Grid) {
-        cell.textLabel.text = data.post.title
-        cell.detailTextLabel.text = data.isBookmarked ? "👍" : ""
-    }
+    override var height: CGFloat { 64 }
     
-    override func size(data: Bookmark, indexPath: IndexPath, grid: Grid, view: UIView) -> CGSize {
-        let width = grid.width(for: view, items: grid.columns)
-        return CGSize(width: width, height: 64)
+    override func updateView() {
+        self.view?.textLabel.text = self.model.post.title
+        self.view?.detailTextLabel.text = self.model.isBookmarked ? "👍" : ""
     }
 }

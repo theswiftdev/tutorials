@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "CollectionView",
+        "repositoryURL": "https://github.com/CoreKit/CollectionView",
+        "state": {
+          "branch": null,
+          "revision": "b97073bd9281c36f087801e78102184a6f88b5dc",
+          "version": "2.0.6"
+        }
+      },
+      {
+        "package": "Promises",
+        "repositoryURL": "https://github.com/CoreKit/Promises.git",
+        "state": {
+          "branch": null,
+          "revision": "84ed35f719685820e587da9a56d9cbf253168539",
+          "version": "1.0.2"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

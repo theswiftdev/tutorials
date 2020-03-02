@@ -6,16 +6,13 @@
 //  Copyright © 2019. Tibor Bödecs. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
-class CommentViewModel: CollectionViewViewModel<TextCell, Comment> {
+class CommentViewModel: ViewModel<TextCell, Comment> {
     
-    override func config(cell: TextCell, data: Comment, indexPath: IndexPath, grid: Grid) {
-        cell.textLabel.text = data.body
-    }
-    
-    override func size(data: Comment, indexPath: IndexPath, grid: Grid, view: UIView) -> CGSize {
-        let width = grid.width(for: view, items: grid.columns)
-        return CGSize(width: width, height: 64)
+    override var height: CGFloat { 64 }
+
+    override func updateView() {
+        self.view?.textLabel.text = self.model.body
     }
 }

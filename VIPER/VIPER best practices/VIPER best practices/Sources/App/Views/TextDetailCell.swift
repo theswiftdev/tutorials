@@ -6,9 +6,9 @@
 //  Copyright © 2019. Tibor Bödecs. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
-class TextDetailCell: CollectionViewCell {
+class TextDetailCell: Cell {
 
     @IBOutlet weak var textLabel: UILabel!
     @IBOutlet weak var detailTextLabel: UILabel!

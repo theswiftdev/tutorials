@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,8 @@
 		16199855222F379B002FA3D4 /* TextDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16199854222F379B002FA3D4 /* TextDetailCell.swift */; };
 		16199857222F37A1002FA3D4 /* TextDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16199856222F37A1002FA3D4 /* TextDetailCell.xib */; };
 		16199859222F37F5002FA3D4 /* BookmarkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16199858222F37F5002FA3D4 /* BookmarkViewModel.swift */; };
+		1624DF3D240CD1CC00931617 /* Promises in Frameworks */ = {isa = PBXBuildFile; productRef = 1624DF3C240CD1CC00931617 /* Promises */; };
+		1624DF40240CD26B00931617 /* CollectionView in Frameworks */ = {isa = PBXBuildFile; productRef = 1624DF3F240CD26B00931617 /* CollectionView */; };
 		16925F99222F1A2700B11518 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16925F98222F1A2700B11518 /* AppDelegate.swift */; };
 		16925FA0222F1A2800B11518 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16925F9F222F1A2800B11518 /* Assets.xcassets */; };
 		16925FA3222F1A2800B11518 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16925FA1222F1A2800B11518 /* LaunchScreen.storyboard */; };
@@ -91,12 +93,9 @@
 		16F553AB223248AC00913BDC /* BookmarkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F553AA223248AC00913BDC /* BookmarkService.swift */; };
 		16F553AE223248BE00913BDC /* DefaultBookmarkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F553AD223248BE00913BDC /* DefaultBookmarkService.swift */; };
 		16F9E50322307C6C004A9788 /* CommentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F9E50222307C6C004A9788 /* CommentViewModel.swift */; };
-		FF9087A73638F94AE78C8545 /* Pods_VIPER_best_practices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6165428A08C9F4BEE53BC43 /* Pods_VIPER_best_practices.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		03AF8C3B827E64CCCFDCA406 /* Pods-VIPER best practices.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPER best practices.release.xcconfig"; path = "Target Support Files/Pods-VIPER best practices/Pods-VIPER best practices.release.xcconfig"; sourceTree = "<group>"; };
-		04133AD4EF2A0296CADFF579 /* Pods-VIPER best practices.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPER best practices.debug.xcconfig"; path = "Target Support Files/Pods-VIPER best practices/Pods-VIPER best practices.debug.xcconfig"; sourceTree = "<group>"; };
 		1619984D222F2D4E002FA3D4 /* MockService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockService.swift; sourceTree = "<group>"; };
 		1619984F222F2FDC002FA3D4 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		16199854222F379B002FA3D4 /* TextDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextDetailCell.swift; sourceTree = "<group>"; };
@@ -183,7 +182,6 @@
 		16F553AA223248AC00913BDC /* BookmarkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkService.swift; sourceTree = "<group>"; };
 		16F553AD223248BE00913BDC /* DefaultBookmarkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultBookmarkService.swift; sourceTree = "<group>"; };
 		16F9E50222307C6C004A9788 /* CommentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewModel.swift; sourceTree = "<group>"; };
-		B6165428A08C9F4BEE53BC43 /* Pods_VIPER_best_practices.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VIPER_best_practices.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,7 +189,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF9087A73638F94AE78C8545 /* Pods_VIPER_best_practices.framework in Frameworks */,
+				1624DF3D240CD1CC00931617 /* Promises in Frameworks */,
+				1624DF40240CD26B00931617 /* CollectionView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,7 +240,6 @@
 			children = (
 				16925F97222F1A2700B11518 /* VIPER best practices */,
 				16925F96222F1A2700B11518 /* Products */,
-				ED2B906052CAFEA7AC7D2FBB /* Pods */,
 				BD03BB8B49CFC22A175C665F /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -663,18 +661,8 @@
 		BD03BB8B49CFC22A175C665F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B6165428A08C9F4BEE53BC43 /* Pods_VIPER_best_practices.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		ED2B906052CAFEA7AC7D2FBB /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				04133AD4EF2A0296CADFF579 /* Pods-VIPER best practices.debug.xcconfig */,
-				03AF8C3B827E64CCCFDCA406 /* Pods-VIPER best practices.release.xcconfig */,
-			);
-			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -684,17 +672,19 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 16925FA7222F1A2800B11518 /* Build configuration list for PBXNativeTarget "VIPER best practices" */;
 			buildPhases = (
-				170772F4A2F9A5F09CC9CD60 /* [CP] Check Pods Manifest.lock */,
 				16925F91222F1A2700B11518 /* Sources */,
 				16925F92222F1A2700B11518 /* Frameworks */,
 				16925F93222F1A2700B11518 /* Resources */,
-				075E16415CD68C0B080840B1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "VIPER best practices";
+			packageProductDependencies = (
+				1624DF3C240CD1CC00931617 /* Promises */,
+				1624DF3F240CD26B00931617 /* CollectionView */,
+			);
 			productName = "VIPER best practices";
 			productReference = 16925F95222F1A2700B11518 /* VIPER best practices.app */;
 			productType = "com.apple.product-type.application";
@@ -711,6 +701,7 @@
 				TargetAttributes = {
 					16925F94222F1A2700B11518 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -723,6 +714,10 @@
 				Base,
 			);
 			mainGroup = 16925F8C222F1A2700B11518;
+			packageReferences = (
+				1624DF3B240CD1CC00931617 /* XCRemoteSwiftPackageReference "Promises" */,
+				1624DF3E240CD26B00931617 /* XCRemoteSwiftPackageReference "CollectionView" */,
+			);
 			productRefGroup = 16925F96222F1A2700B11518 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -745,55 +740,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		075E16415CD68C0B080840B1 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-VIPER best practices/Pods-VIPER best practices-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/CollectionView/CollectionView.framework",
-				"${BUILT_PRODUCTS_DIR}/Promises/Promises.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CollectionView.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Promises.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VIPER best practices/Pods-VIPER best practices-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		170772F4A2F9A5F09CC9CD60 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-VIPER best practices-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		16925F91222F1A2700B11518 /* Sources */ = {
@@ -948,7 +894,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1003,7 +949,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -1015,7 +961,6 @@
 		};
 		16925FA8222F1A2800B11518 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 04133AD4EF2A0296CADFF579 /* Pods-VIPER best practices.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -1027,14 +972,13 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tiborbodecs.VIPER-best-practices";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		16925FA9222F1A2800B11518 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 03AF8C3B827E64CCCFDCA406 /* Pods-VIPER best practices.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -1046,7 +990,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tiborbodecs.VIPER-best-practices";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -1073,6 +1017,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1624DF3B240CD1CC00931617 /* XCRemoteSwiftPackageReference "Promises" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CoreKit/Promises.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.2;
+			};
+		};
+		1624DF3E240CD26B00931617 /* XCRemoteSwiftPackageReference "CollectionView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CoreKit/CollectionView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1624DF3C240CD1CC00931617 /* Promises */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1624DF3B240CD1CC00931617 /* XCRemoteSwiftPackageReference "Promises" */;
+			productName = Promises;
+		};
+		1624DF3F240CD26B00931617 /* CollectionView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1624DF3E240CD26B00931617 /* XCRemoteSwiftPackageReference "CollectionView" */;
+			productName = CollectionView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 16925F8D222F1A2700B11518 /* Project object */;
 }

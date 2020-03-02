@@ -15,11 +15,8 @@ class PostDetailsDefaultView: CollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.view.backgroundColor = .white
+        self.view.backgroundColor = .systemBackground
 
-        
-        
-        
         self.presenter?.reload()
     }
     
@@ -44,10 +41,11 @@ extension PostDetailsDefaultView: PostDetailsView {
     
     func display(_ comments: [Comment]) {
         let grid = Grid(columns: 1, margin: UIEdgeInsets(all: 8))
-
-        self.source = CollectionViewSource(grid: grid, sections: [
-            CollectionViewSection(items: comments.map { CommentViewModel($0) })
+        
+        self.collectionView.source = .init(grid: grid, [
+            comments.map { CommentViewModel($0) }
         ])
+
         self.collectionView.reloadData()
     }
 

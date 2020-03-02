@@ -14,7 +14,7 @@ class PostsDefaultView: CollectionViewController {
     
     weak var activityIndicator: UIActivityIndicatorView!
     
-    init() {
+    override init() {
         super.init(nibName: nil, bundle: nil)
 
         self.title = "Posts"
@@ -27,7 +27,7 @@ class PostsDefaultView: CollectionViewController {
     override func loadView() {
         super.loadView()
         
-        let activityIndicator = UIActivityIndicatorView(style: .gray)
+        let activityIndicator = UIActivityIndicatorView(style: .medium)
         activityIndicator.translatesAutoresizingMaskIntoConstraints = false
         self.view.addSubview(activityIndicator)
         self.activityIndicator = activityIndicator
@@ -40,6 +40,8 @@ class PostsDefaultView: CollectionViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.view.backgroundColor = .systemBackground
 
         self.presenter?.reload()
     }
@@ -60,12 +62,13 @@ extension PostsDefaultView: PostsView {
 
         let grid = Grid(columns: 1, margin: UIEdgeInsets(all: 8))
         
-        self.source = CollectionViewSource(grid: grid, sections: [
-            CollectionViewSection(items: bookmarks.map { BookmarkViewModel($0) }) { data, indexPath in
-                let bookmark = data as! Bookmark
-                self.presenter?.didSelect(bookmark.post)
+        let viewModels = bookmarks.map { item -> BookmarkViewModel in
+            return BookmarkViewModel(item)
+            .onSelect { [weak self] viewModel in
+                self?.presenter?.didSelect(viewModel.model.post)
             }
-        ])
+        }
+        self.collectionView.source = .init(grid: grid, [viewModels])
         self.collectionView.reloadData()
     }
 
